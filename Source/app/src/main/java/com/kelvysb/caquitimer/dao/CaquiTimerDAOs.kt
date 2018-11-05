@@ -22,6 +22,7 @@ class CaquiTimerDAOProvider {
             CaquiTimerRepository::class.java,
             "caquitimer.db"
         ).fallbackToDestructiveMigration().build()
+
     }
 
     @Singleton

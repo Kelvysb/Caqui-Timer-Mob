@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -40,4 +42,9 @@ dependencies {
 
     implementation "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    implementation 'net.danlew:android.joda:2.9.9.1'
+
+    implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation 'com.loopj.android:android-async-http:1.4.9'
 }
